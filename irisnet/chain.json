@@ -38,33 +38,7 @@
     ],
     "genesis": {
       "genesis_url": "https://raw.githubusercontent.com/irisnet/mainnet/master/config/genesis.json"
-    },
-    "versions": [
-      {
-        "name": "v1.3.0",
-        "next_version_name": "v1.4.1",
-        "recommended_version": "v1.3.0",
-        "compatible_versions": [
-          "v1.3.0"
-        ]
-      },
-      {
-        "name": "v1.4.1",
-        "next_version_name": "v2.0.0",
-        "recommended_version": "v1.4.1",
-        "compatible_versions": [
-          "v1.4.1"
-        ]
-      },
-      {
-        "name": "v2.0.0",
-        "next_version_name": "v2.1.0",
-        "recommended_version": "v2.0.3",
-        "compatible_versions": [
-          "v2.0.3"
-        ]
-      }
-    ]
+    }
   },
   "logo_URIs": {
     "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/irisnet/images/iris.png",
@@ -219,6 +193,12 @@
   },
   "explorers": [
     {
+      "kind": "Chainroot",
+      "url": "https://explorer.chainroot.io/iris",
+      "tx_page": "https://explorer.chainroot.io/iris/transactions/${txHash}",
+      "account_page": "https://explorer.chainroot.io/iris/accounts/${accountAddress}"
+    },
+    {
       "kind": "ezstaking",
       "url": "https://ezstaking.app/irisnet",
       "tx_page": "https://ezstaking.app/irisnet/txs/${txHash}",
@@ -234,6 +214,12 @@
       "kind": "ping.pub",
       "url": "https://ping.pub/iris-network",
       "tx_page": "https://ping.pub/iris-network/tx/${txHash}"
+    },
+    {
+      "kind": "staking-explorer.com",
+      "url": "https://staking-explorer.com/explorer/irisnet",
+      "tx_page": "https://staking-explorer.com/transaction.php?chain=irisnet&tx=${txHash}",
+      "account_page": "https://staking-explorer.com/account.php?chain=irisnet&addr=${accountAddress}"
     },
     {
       "kind": "atomscan",
@@ -260,15 +246,18 @@
       "kind": "KonsorTech",
       "url": "https://explorer.konsortech.xyz/iris",
       "tx_page": "https://explorer.konsortech.xyz/iris/tx/${txHash}"
+    },
+    {
+      "kind": "Valopers",
+      "url": "https://iris.valopers.com/",
+      "tx_page": "https://iris.valopers.com/transactions/${txHash}",
+      "account_page": "https://iris.valopers.com/account/${accountAddress}"
     }
   ],
   "images": [
     {
       "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/irisnet/images/iris.png",
-      "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/irisnet/images/iris.svg",
-      "theme": {
-        "primary_color_hex": "#5664ad"
-      }
+      "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/irisnet/images/iris.svg"
     }
   ]
 }
